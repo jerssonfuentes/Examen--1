@@ -9,28 +9,22 @@ body {
 
 /* Header */
 .header_container {
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 31px;
+    padding: 20px;
+    background-color: black; /* Fondo oscuro para el header */
 }
 
+/* Logo AQUA (pegado a la izquierda) */
 .logo {
     width: 298px;
     height: 96px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Logo pegado a la izquierda */
     align-items: center;
-    background-color: var(--color-1);
-    position: relative;
-    left: -50px;
-}
-
-.logo p {
-    font-family: "Roboto-Regular";
-    font-size: 24px;
-    position: relative;
 }
 
 .logo img {
@@ -38,45 +32,45 @@ body {
     height: 96px;
 }
 
+/* Menú de navegación (centrado) */
 .container_menu {
-    width: 732px;
-    height: 38px;
+    flex-grow: 1;
     display: flex;
-    position: relative;
-    left: 90px;
+    justify-content: center; /* Menú centrado */
 }
 
-.home {
-    width: 732px;
-    height: 38px;
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 20px; /* Espacio entre los elementos del menú */
+    gap: 30px; /* Espacio entre los elementos del menú */
 }
 
-.init, .how, .help, .about {
-    margin: 8px;
-}
-
-.init a, .how a, .help a, .about a {
-    text-decoration: none;
-}
-
-.init p, .how p, .help p, .about p {
-    font-family: "Roboto-Bold";
-    font-size: 24px;
+.nav-links li a {
     color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400; /* Peso de la fuente */
+    transition: color 0.3s ease;
 }
 
+.nav-links li a:hover {
+    color: #ccc; /* Cambia el color al pasar el mouse */
+}
+
+/* Iconos (luna y sol, pegados a la derecha) */
 .night_container {
-    width: 103px;
+    width: auto;
     height: 40px;
+    display: flex;
+    justify-content: flex-end; /* Iconos pegados a la derecha */
+    align-items: center;
 }
 
 .night {
     display: flex;
-    gap: 30px;
-    align-items: center;
-    padding-left: 217px;
+    gap: 30px; /* Espacio entre los íconos */
 }
 
 .night img {
@@ -84,7 +78,7 @@ body {
     width: auto;
 }
 
-
+/* Sección GREV y texto */
 .gre-section {
     text-align: center;
     margin: 20px 0;
@@ -94,55 +88,72 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; 
+    gap: 15px; /* Espacio entre las imágenes */
 }
 
 .gre-image, .dog-image {
-    height: 420px; 
+    height: 420px; /* Ajusta el tamaño de las imágenes */
     width: auto;
 }
 
-.gre-section p {
+.text-container {
+    margin-top: 20px;
+}
+
+.text-container p {
     font-size: 1.5em;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
-
-section {
-    margin-bottom: 40px;
+/* Sección ¿Cómo jugar? */
+#como-jugar {
+    text-align: center;
+    margin: 40px 0;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-p, ul {
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-
-.image-placeholder {
-    width: 100%;
-    height: 200px;
-    background-color: #333;
+#como-jugar h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
+.como-jugar-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+.como-jugar-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.comprar-button {
+    margin-top: 20px;
+}
+
+.comprar-button a {
+    background-color: #ff5722; /* Color de fondo del botón */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.comprar-button a:hover {
+    background-color: #e64a19; /* Cambia el color al pasar el mouse */
+}
+
+/* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
     font-size: 0.9em;
 }
 
-
+/* Iconos */
 .icons {
     display: flex;
     justify-content: center;
