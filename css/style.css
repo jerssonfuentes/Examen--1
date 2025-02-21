@@ -7,8 +7,8 @@ body {
 }
 
 .header_container{
-    width: 1440px;
-    height: 141px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,7 +69,7 @@ body {
 .init p{
     font-family: "Roboto-Bold";
     font-size: 24px;
-    color: var(--color-1);
+    color: white;
 }
 
 .how{
@@ -87,7 +87,7 @@ body {
 .how p{
     font-family: "Roboto-Bold";
     font-size: 24px;
-    color: var(--color-1);
+    color: white;
 }
 
 .help{
@@ -103,7 +103,7 @@ body {
 .help p{
     font-family: "Roboto-Bold";
     font-size: 24px;
-    color: var(--color-1);
+    color: white;
 }
 
 .about{
@@ -117,7 +117,7 @@ body {
 .about p{
     font-family: "Roboto-Bold";
     font-size: 24px;
-    color: var(--color-1);
+    color: white;
 }
 
 .night_container{
