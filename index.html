@@ -3,66 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AQUA - Juego de Cartas Inclusivo</title>
+    <title>Navbar AQUA</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Menú de Navegación -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#como-jugar">  CÓMO JUGAR</a></li>
-            <li><a href="#apoyanos">APÓYANOS</a></li>
-            <li><a href="#nosotros">SOBRE NOSOTROS</a></li>
-        </ul>
-    </nav>
-
-    <!-- Sección Inicio -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>AQUA</h1>
-            <p class="eslogan">Somos creatividad, somos Crace</p>
-            <p class="descripcion">Un juego de cartas inclusivo donde la diversión no distingue condiciones físicas</p>
-            <button class="btn-compra">Comprar ahora</button>
-            <div class="redes-sociales">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="mailto:contacto@aqua.com"><i class="fas fa-envelope"></i></a>
+    <header>
+        <div class="header_container">
+            <div class="container_logo">
+                <div class="logo">
+                    <img src="/storage/img/aqua.png" alt="">
+                </div>
+            </div>
+            <div class="container_menu">
+                <div class="home">
+                    <div class="init">
+                    <a href=""><p>INICIO</p></a>
+                    </div>
+                    <div class="how">
+                    <a href=""><p>CÓMO JUGAR</p></a>
+                    </div>
+                    <div class="help">
+                    <a href=""><p>APÓYANOS</p></a>
+                    </div>
+                    <div class="about">
+                    <a href=""><p>SOBRE NOSOTROS</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="night_container">
+                <div class="night">
+                    <div class="moon">
+                        <img src="/storage/img/Moon.png" alt="">
+                    </div>
+                    <div class="sun">
+                        <img src="/storage/img/Sun.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-        <img src="img/hero.jpg" alt="Juego de cartas AQUA" class="hero-image">
-    </section>
+    </header>
 
-    <!-- Sección Cómo Jugar -->
-    <section id="como-jugar" class="seccion">
-        <h2>Cómo Jugar</h2>
-        <div class="reglas-container">
-            <div class="regla">
-                <img src="img/regla1.jpg" alt="Preparación del juego">
-                <p>Comienza colocando las cartas boca abajo</p>
+        <!-- Imagen GRE y texto -->
+        <div class="gre-section">
+            <img src="storage/img/crae.png" alt="GRE" class="gre-image">
+            <p>Somos creatividad, somos Crae</p>
+        </div>
+
+        <!-- Sección INICIO -->
+        <section id="inicio">
+            <div class="image-placeholder"></div>
+            <p>Crae es un juego de cartas inclusivo donde personas videntes, no videntes y con discapacidad visual pueden participar y disfrutar en conjunto.</p>
+        </section>
+
+        <!-- Sección CÓMO JUGAR -->
+        <section id="como-jugar">
+            <h2>CÓMO JUGAR</h2>
+            <div class="image-placeholder"></div>
+            <p>Instrucciones detalladas sobre cómo jugar al juego Crae.</p>
+        </section>
+
+        <!-- Sección APÓYANOS -->
+        <section id="apoyanos">
+            <h2>APÓYANOS</h2>
+            <div class="image-placeholder"></div>
+            <p>Por favor, si quieres ayudarnos económicamente, no dudes en donar en Kickstarter. Así financiarías nuestro proyecto y contribuirías a cumplir este gran sueño.</p>
+        </section>
+
+        <!-- Sección SOBRE NOSOTROS -->
+        <section id="sobre-nosotros">
+            <h2>SOBRE NOSOTROS</h2>
+            <div class="image-placeholder"></div>
+            <p>Somos Aqua, un equipo que trabaja por la inclusión, principalmente por las personas no videntes o con discapacidad visual. Creemos que la diversión no debe distinguir condiciones físicas, por eso desarrollamos “Crae”, un juego de cartas inclusivo donde personas videntes, no videntes y con discapacidad visual pueden participar y disfrutar en conjunto.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Espacio para iconos -->
+            <div class="icons">
+                <div class="icon-placeholder"></div>
+                <div class="icon-placeholder"></div>
+                <div class="icon-placeholder"></div>
             </div>
-            <!-- Repetir para las otras 4 reglas -->
-        </div>
-    </section>
-
-    <!-- Sección Apóyanos -->
-    <section id="apoyanos" class="seccion destacada">
-        <div class="apoyo-content">
-            <h2>Apóyanos</h2>
-            <p>Ayúdanos a hacer crecer este proyecto inclusivo</p>
-            <img src="img/apoyo.jpg" alt="Personas jugando AQUA">
-            <button class="btn-aporte">Haz tu aporte</button>
-        </div>
-    </section>
-
-    <!-- Sección Sobre Nosotros -->
-    <section id="nosotros" class="seccion">
-        <h2>Sobre Nosotros</h2>
-        <div class="nosotros-content">
-            <img src="img/equipo.jpg" alt="Equipo de AQUA">
-            <p>Somos un equipo comprometido con la inclusión y la creatividad...</p>
-        </div>
-    </section>
+            <p>&copy; 2023 AQUA. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>
