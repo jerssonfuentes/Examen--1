@@ -105,6 +105,28 @@ body {
     margin: 10px 0;
 }
 
+/* Botón Comprar */
+.comprar-button {
+    text-align: center;
+    margin: 40px 0; /* Margen superior e inferior */
+}
+
+.comprar-button a {
+    background-color: #ff5722; /* Color de fondo del botón */
+    color: white;
+    padding: 15px 30px; /* Ajusta el padding para que el botón sea más grande */
+    text-decoration: none;
+    font-size: 1.5em; /* Tamaño de la fuente */
+    border-radius: 25px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Para que el padding funcione correctamente */
+}
+
+.comprar-button a:hover {
+    background-color: #e64a19; /* Cambia el color al pasar el mouse */
+}
+
 /* Sección ¿Cómo jugar? */
 #como-jugar {
     text-align: center;
@@ -128,22 +150,30 @@ body {
     margin-bottom: 20px;
 }
 
-.comprar-button {
-    margin-top: 20px;
+/* Pasos 1, 2, 3, 4, 5 */
+.pasos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.comprar-button a {
-    background-color: #ff5722; /* Color de fondo del botón */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+.paso {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icono-paso {
+    width: 50px;
+    height: 50px;
+    background-color: #333; 
+    border-radius: 50%;
+    margin-right: 20px; 
+}
+
+.texto-paso p {
     font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.comprar-button a:hover {
-    background-color: #e64a19; /* Cambia el color al pasar el mouse */
+    line-height: 1.6;
 }
 
 /* Footer */
